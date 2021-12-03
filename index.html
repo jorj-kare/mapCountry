@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mapCountry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="module" defer src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="menu js-menu">
+      <!-- <h1 class="menu__title">Select a continent to start the game!</h1> -->
+      <div class="menu__btn-box js-menu__btn-box">
+        <button class="menu__btn" type="button" value="Africa">Africa</button>
+        <button class="menu__btn" type="button" value="Asia">Asia</button>
+        <button class="menu__btn" type="button" value="Europe">Europe</button>
+        <button class="menu__btn" type="button" value="Oceania">Oceania</button>
+        <button class="menu__btn" type="button" value="South_America"
+          >South <br />
+          America</button
+        >
+        <button class="menu__btn" type="button" value="North_America"
+          >North <br />
+          America</button
+        >
+        <button class="menu__btn" type="button" value="All"
+          >All <br />
+          Continents</button
+        >
+      </div>
+    </div>
+
+    <div class="info js-info hidden">
+      <button class="info__btn js-info__btn">End Game</button>
+      <div class="wrapper">
+        <p class="info__text js-info__text"> </p>
+        <span class="info__timer js-info__timer"></span>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
