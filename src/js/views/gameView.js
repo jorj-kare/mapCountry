@@ -5,7 +5,6 @@ const infoBtn = document.querySelector(".js-info__btn");
 const menuBtn = document.querySelectorAll(".menu__btn");
 let timer;
 const displayInfo = function (information, seconds = 0) {
-  console.log(information);
   setTimeout(() => {
     infoTextEl.textContent = "";
     infoEl.classList.remove("hidden");
@@ -75,7 +74,6 @@ const startTimer = function () {
   // Call the timer every second
   tick();
   timer = setInterval(tick, 1000);
-  console.log(timer);
 };
 
 const addHandlerEndGame = function (handler) {

@@ -15,14 +15,7 @@
     "Three_Letter_Country_Code": "ALB",
     "Two_Letter_Country_Code": "AL"
   },
-  {
-    "Continent_Code": "AN",
-    "Continent_Name": "Antarctica",
-    "Country_Name": "Antarctica (the territory South of 60 deg S)",
-    "Country_Number": 10,
-    "Three_Letter_Country_Code": "ATA",
-    "Two_Letter_Country_Code": "AQ"
-  },
+
   {
     "Continent_Code": "AF",
     "Continent_Name": "Africa",
@@ -185,14 +178,7 @@
     "Three_Letter_Country_Code": "BWA",
     "Two_Letter_Country_Code": "BW"
   },
-  {
-    "Continent_Code": "AN",
-    "Continent_Name": "Antarctica",
-    "Country_Name": "Bouvet Island (Bouvetoya)",
-    "Country_Number": 74,
-    "Three_Letter_Country_Code": "BVT",
-    "Two_Letter_Country_Code": "BV"
-  },
+
   {
     "Continent_Code": "SA",
     "Continent_Name": "South America",
@@ -361,22 +347,7 @@
     "Three_Letter_Country_Code": "TWN",
     "Two_Letter_Country_Code": "TW"
   },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "Christmas Island",
-    "Country_Number": 162,
-    "Three_Letter_Country_Code": "CXR",
-    "Two_Letter_Country_Code": "CX"
-  },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "Cocos (Keeling) Islands",
-    "Country_Number": 166,
-    "Three_Letter_Country_Code": "CCK",
-    "Two_Letter_Country_Code": "CC"
-  },
+
   {
     "Continent_Code": "SA",
     "Continent_Name": "South America",
@@ -393,14 +364,7 @@
     "Three_Letter_Country_Code": "COM",
     "Two_Letter_Country_Code": "KM"
   },
-  {
-    "Continent_Code": "AF",
-    "Continent_Name": "Africa",
-    "Country_Name": "Mayotte",
-    "Country_Number": 175,
-    "Three_Letter_Country_Code": "MYT",
-    "Two_Letter_Country_Code": "YT"
-  },
+
   {
     "Continent_Code": "AF",
     "Continent_Name": "Africa",
@@ -457,14 +421,7 @@
     "Three_Letter_Country_Code": "CYP",
     "Two_Letter_Country_Code": "CY"
   },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "Cyprus, Republic of",
-    "Country_Number": 196,
-    "Three_Letter_Country_Code": "CYP",
-    "Two_Letter_Country_Code": "CY"
-  },
+
   {
     "Continent_Code": "EU",
     "Continent_Name": "Europe",
@@ -569,14 +526,7 @@
     "Three_Letter_Country_Code": "FLK",
     "Two_Letter_Country_Code": "FK"
   },
-  {
-    "Continent_Code": "AN",
-    "Continent_Name": "Antarctica",
-    "Country_Name": "South Georgia and the South Sandwich Islands",
-    "Country_Number": 239,
-    "Three_Letter_Country_Code": "SGS",
-    "Two_Letter_Country_Code": "GS"
-  },
+
   {
     "Continent_Code": "OC",
     "Continent_Name": "Oceania",
@@ -601,14 +551,7 @@
     "Three_Letter_Country_Code": "FRA",
     "Two_Letter_Country_Code": "FR"
   },
-  {
-    "Continent_Code": "SA",
-    "Continent_Name": "South America",
-    "Country_Name": "French Guiana",
-    "Country_Number": 254,
-    "Three_Letter_Country_Code": "GUF",
-    "Two_Letter_Country_Code": "GF"
-  },
+
   {
     "Continent_Code": "OC",
     "Continent_Name": "Oceania",
@@ -617,14 +560,7 @@
     "Three_Letter_Country_Code": "PYF",
     "Two_Letter_Country_Code": "PF"
   },
-  {
-    "Continent_Code": "AN",
-    "Continent_Name": "Antarctica",
-    "Country_Name": "French Southern Territories",
-    "Country_Number": 260,
-    "Three_Letter_Country_Code": "ATF",
-    "Two_Letter_Country_Code": "TF"
-  },
+
   {
     "Continent_Code": "AF",
     "Continent_Name": "Africa",
@@ -722,14 +658,7 @@
     "Three_Letter_Country_Code": "GRD",
     "Two_Letter_Country_Code": "GD"
   },
-  {
-    "Continent_Code": "NA",
-    "Continent_Name": "North America",
-    "Country_Name": "Guadeloupe",
-    "Country_Number": 312,
-    "Three_Letter_Country_Code": "GLP",
-    "Two_Letter_Country_Code": "GP"
-  },
+
   {
     "Continent_Code": "OC",
     "Continent_Name": "Oceania",
@@ -770,14 +699,7 @@
     "Three_Letter_Country_Code": "HTI",
     "Two_Letter_Country_Code": "HT"
   },
-  {
-    "Continent_Code": "AN",
-    "Continent_Name": "Antarctica",
-    "Country_Name": "Heard Island and McDonald Islands",
-    "Country_Number": 334,
-    "Three_Letter_Country_Code": "HMD",
-    "Two_Letter_Country_Code": "HM"
-  },
+
   {
     "Continent_Code": "EU",
     "Continent_Name": "Europe",
@@ -1082,14 +1004,7 @@
     "Three_Letter_Country_Code": "MLT",
     "Two_Letter_Country_Code": "MT"
   },
-  {
-    "Continent_Code": "NA",
-    "Continent_Name": "North America",
-    "Country_Name": "Martinique",
-    "Country_Number": 474,
-    "Three_Letter_Country_Code": "MTQ",
-    "Two_Letter_Country_Code": "MQ"
-  },
+
   {
     "Continent_Code": "AF",
     "Continent_Name": "Africa",
@@ -1210,14 +1125,7 @@
     "Three_Letter_Country_Code": "NLD",
     "Two_Letter_Country_Code": "NL"
   },
-  {
-    "Continent_Code": "NA",
-    "Continent_Name": "North America",
-    "Country_Name": "Netherlands Antilles",
-    "Country_Number": 530,
-    "Three_Letter_Country_Code": "ANT",
-    "Two_Letter_Country_Code": "AN"
-  },
+
   {
     "Continent_Code": "NA",
     "Continent_Name": "North America",
@@ -1242,14 +1150,7 @@
     "Three_Letter_Country_Code": "SXM",
     "Two_Letter_Country_Code": "SX"
   },
-  {
-    "Continent_Code": "NA",
-    "Continent_Name": "North America",
-    "Country_Name": "Bonaire, Sint Eustatius and Saba",
-    "Country_Number": 535,
-    "Three_Letter_Country_Code": "BES",
-    "Two_Letter_Country_Code": "BQ"
-  },
+
   {
     "Continent_Code": "OC",
     "Continent_Name": "Oceania",
@@ -1330,14 +1231,7 @@
     "Three_Letter_Country_Code": "MNP",
     "Two_Letter_Country_Code": "MP"
   },
-  {
-    "Continent_Code": "OC",
-    "Continent_Name": "Oceania",
-    "Country_Name": "United States Minor Outlying Islands",
-    "Country_Number": 581,
-    "Three_Letter_Country_Code": "UMI",
-    "Two_Letter_Country_Code": "UM"
-  },
+
   {
     "Continent_Code": "NA",
     "Continent_Name": "North America",
@@ -1474,14 +1368,7 @@
     "Three_Letter_Country_Code": "QAT",
     "Two_Letter_Country_Code": "QA"
   },
-  {
-    "Continent_Code": "AF",
-    "Continent_Name": "Africa",
-    "Country_Name": "Reunion",
-    "Country_Number": 638,
-    "Three_Letter_Country_Code": "REU",
-    "Two_Letter_Country_Code": "RE"
-  },
+
   {
     "Continent_Code": "EU",
     "Continent_Name": "Europe",
@@ -1786,14 +1673,7 @@
     "Three_Letter_Country_Code": "TGO",
     "Two_Letter_Country_Code": "TG"
   },
-  {
-    "Continent_Code": "OC",
-    "Continent_Name": "Oceania",
-    "Country_Name": "Tokelau",
-    "Country_Number": 772,
-    "Three_Letter_Country_Code": "TKL",
-    "Two_Letter_Country_Code": "TK"
-  },
+
   {
     "Continent_Code": "OC",
     "Continent_Name": "Oceania",
@@ -2010,37 +1890,5 @@
     "Country_Number": 894,
     "Three_Letter_Country_Code": "ZMB",
     "Two_Letter_Country_Code": "ZM"
-  },
-  {
-    "Continent_Code": "OC",
-    "Continent_Name": "Oceania",
-    "Country_Name": "Disputed Territory",
-    "Country_Number": null,
-    "Three_Letter_Country_Code": null,
-    "Two_Letter_Country_Code": "XX"
-  },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "Iraq-Saudi Arabia Neutral Zone",
-    "Country_Number": null,
-    "Three_Letter_Country_Code": null,
-    "Two_Letter_Country_Code": "XE"
-  },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "United Nations Neutral Zone",
-    "Country_Number": null,
-    "Three_Letter_Country_Code": null,
-    "Two_Letter_Country_Code": "XD"
-  },
-  {
-    "Continent_Code": "AS",
-    "Continent_Name": "Asia",
-    "Country_Name": "Spratly Islands",
-    "Country_Number": null,
-    "Three_Letter_Country_Code": null,
-    "Two_Letter_Country_Code": "XS"
   }
 ]

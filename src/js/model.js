@@ -27,7 +27,7 @@ export const renderMap = function () {
 export const loadRandomCountry = (countriesByContinent) => {
   const index = generateRandomNumber(0, countriesByContinent.length - 1);
   const country = countriesByContinent[index];
-  console.log(countriesByContinent);
+
   if (!country) return;
   state.randomCountry = {
     index: index,

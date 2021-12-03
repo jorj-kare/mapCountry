@@ -34,7 +34,6 @@ const controlGame = async function (e) {
   await model.loadCountriesPolygon(model.state.map);
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
   model.loadRandomCountry(model.state.continent.countries);
-  console.log(model.state.randomCountry);
   gameView.displayInfo(model.state.randomCountry, 1);
 
   gameView.renderCountriesPolygons(
@@ -42,6 +41,16 @@ const controlGame = async function (e) {
     model.state.continent.countriesPolygon,
     controlCountry
   );
+  console.log(model.state.continent.countries);
+  console.log(model.state.continent.countriesPolygon);
+  const coun = model.state.continent.countries.map(
+    (c) => c.Three_Letter_Country_Code
+  );
+  const counP = model.state.continent.countriesPolygon.map(
+    (c) => c.properties.ISO_A3
+  );
+  const difference = coun.filter((c) => !counP.includes(c));
+  console.log(difference);
 };
 
 const controlCountry = function (e) {
