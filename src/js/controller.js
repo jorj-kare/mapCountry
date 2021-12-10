@@ -38,7 +38,7 @@ const controlGame = async function (e) {
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
   model.loadRandomCountry(model.state.continent.countries);
   gameView.displayInfo(model.state.randomCountry, 1);
-infoEl.innerHTML= '';
+// infoEl.innerHTML= '';
   gameView.renderCountriesPolygons(
     model.state.map,
     model.state.continent.countriesPolygon,
