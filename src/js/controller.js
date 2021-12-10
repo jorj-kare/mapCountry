@@ -30,14 +30,15 @@ const controlGame = async function (e) {
   if (!model.state.continent.continentName) return;
 
   menuView.hideMenu();
+  helper.renderSpinner(infoEl);
   const continent = model.loadCentroids(model.state.continent.continentName);
   await model.loadContinentSelection();
-  helper.renderSpinner(infoEl);
+  
   await model.loadCountriesPolygon(model.state.map);
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
   model.loadRandomCountry(model.state.continent.countries);
   gameView.displayInfo(model.state.randomCountry, 1);
-
+infoEl.innerHTML= '';
   gameView.renderCountriesPolygons(
     model.state.map,
     model.state.continent.countriesPolygon,
