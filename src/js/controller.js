@@ -1,5 +1,6 @@
 "use strict";
-
+import icons from 'url:../data/icons.svg';
+const infoEl = document.querySelector(".box");
 import * as helper from "./helpers";
 import * as model from "./model";
 import * as gameView from "./views/gameView";
@@ -31,6 +32,7 @@ const controlGame = async function (e) {
   menuView.hideMenu();
   const continent = model.loadCentroids(model.state.continent.continentName);
   await model.loadContinentSelection();
+  helper.renderSpinner(infoEl);
   await model.loadCountriesPolygon(model.state.map);
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
   model.loadRandomCountry(model.state.continent.countries);
@@ -41,16 +43,6 @@ const controlGame = async function (e) {
     model.state.continent.countriesPolygon,
     controlCountry
   );
-  console.log(model.state.continent.countries);
-  console.log(model.state.continent.countriesPolygon);
-  const coun = model.state.continent.countries.map(
-    (c) => c.Three_Letter_Country_Code
-  );
-  const counP = model.state.continent.countriesPolygon.map(
-    (c) => c.properties.ISO_A3
-  );
-  const difference = coun.filter((c) => !counP.includes(c));
-  console.log(difference);
 };
 
 const controlCountry = function (e) {
@@ -62,7 +54,7 @@ const controlCountry = function (e) {
       color
     );
     model.state.continent.countries.splice(model.state.randomCountry.index, 1);
-    console.log(model.state.continent.countries);
+
     model.loadRandomCountry(model.state.continent.countries);
     gameView.displayInfo("Correct!");
     gameView.displayInfo(model.state.randomCountry, 1);

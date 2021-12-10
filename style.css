@@ -178,3 +178,31 @@ a {
 .rotate {
   transform: rotate(90deg);
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+
+  
+}
+svg {
+  height: 6rem;
+  width: 6rem;
+  fill: rgb(112, 12, 170);
+  animation: rotate 2s infinite linear;
+}
+.box{
+  position: absolute;
+  inset: 50% ;
+  background: transparent;
+
+}

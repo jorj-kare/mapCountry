@@ -1,3 +1,5 @@
+
+
 const infoEl = document.querySelector(".js-info");
 const infoTextEl = document.querySelector(".js-info__text");
 const infoTimer = document.querySelector(".js-info__timer");

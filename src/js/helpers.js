@@ -1,3 +1,5 @@
+import icons from 'url:../data/icons.svg';
+
 export const fetchData = async function (url, errorMessage) {
   try {
     const response = await fetch(url);
@@ -40,3 +42,14 @@ export const startTimer = function (parentEl) {
 
   return timer;
 };
+export const renderSpinner = function(parentElement) {
+  const markup = `
+    <div class="spinner">
+      <svg>
+        <use href="${icons}#icon-loader"></use>
+      </svg>
+    </div>
+  `;
+  // this._clear();
+  parentElement.insertAdjacentHTML('afterbegin', markup);
+}
