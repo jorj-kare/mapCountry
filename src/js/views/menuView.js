@@ -23,14 +23,15 @@ const addHandlerMenu = function (handler) {
     const btn = e.target.closest(".menu__btn");
     if (!btn) return;
     btn.style.background = generateRandomColor("dark");
-    btn.style.opacity = 0.7;
+    btn.style.opacity = 0.6;
     btn.style.color = "#eee";
   });
-  // menuBtn.forEach((btn) =>
-  //   btn.addEventListener("mouseout", function (e) {
-  //     btn.style.background = "#eeeeee9a";
-  //     btn.style.color = "#222";
-  //   })
-  // );
+  menuBtn.forEach((btn) =>
+    btn.addEventListener("mouseout", function (e) {
+      btn.style.background = "#eee";
+      btn.style.color = "#222";
+      btn.style.opacity = 0.6;
+    })
+  );
 };
 export { addHandlerMenu, moveTo, hideMenu, getContinentName };

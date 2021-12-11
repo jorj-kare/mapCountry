@@ -17,9 +17,11 @@ const displayInfo = function (information, seconds = 0) {
 
     infoTextEl.insertAdjacentText("afterbegin", message);
   }, seconds * 1000);
+  
 };
 
 const addHandlerCountry = function (handler) {
+  
   menuBtn.forEach((btn) =>
     btn.addEventListener("click", function (e) {
       handler(e);
@@ -27,8 +29,8 @@ const addHandlerCountry = function (handler) {
   );
 };
 
-const renderCountriesPolygons = function (map, countriesPolygon, handler) {
-  startTimer();
+const renderCountriesPolygons = function (map, countriesPolygon) {
+  
   countriesPolygon.forEach((country) => {
     if (Object.keys(map.getStyle().sources).includes(country.properties.ISO_A3))
       return;
@@ -47,21 +49,24 @@ const renderCountriesPolygons = function (map, countriesPolygon, handler) {
       },
     });
 
-    map.on("click", country.properties.ISO_A3, handler);
+    // map.on("click", country.properties.ISO_A3, handler);
   });
+  setTimeout(startTimer,3000 )
+  
+ 
 };
-// export const addHandlerClickCountry = function (data, map) {
-//   console.log(data);
-//   const layers = map.getStyle().layers;
-//   if (!layers) return;
-//   layers.forEach((l) =>
-//     map.on("click", l.id, (e) => {
-//       if (e.features[0].properties.ISO_A3 === data.randomCountry.code3) {
-//       }
-//     })
-//   );
-// };
+export const addHandlerClickCountry = function ( map,data,handler) {
+  
+  const layers = map.getStyle().layers;
+  if (!layers) return;
+  layers.forEach((l) =>
+    map.on("click", l.id, (e) => {
+      handler(e);
+    })
+  );
+};
 const startTimer = function () {
+ 
   const tick = function () {
     const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
@@ -76,6 +81,7 @@ const startTimer = function () {
   // Call the timer every second
   tick();
   timer = setInterval(tick, 1000);
+ 
 };
 
 const addHandlerEndGame = function (handler) {

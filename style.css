@@ -181,7 +181,7 @@ a {
 
 @keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 
   100% {
@@ -189,21 +189,19 @@ a {
   }
 }
 .spinner {
-  z-index: 10;
   margin: 5rem auto;
   text-align: center;
-
-  
 }
+
 svg {
-  height: 6rem;
-  width: 6rem;
-  fill: rgb(112, 12, 170);
+  height: 8rem;
+  width: 8rem;
+  fill: rgba(201, 9, 240, 0.562);
   animation: rotate 2s infinite linear;
 }
-.box{
-  position: absolute;
-  inset: 50% ;
-  background: transparent;
 
+.box {
+  z-index: 5;
+  position: absolute;
+  inset: 30% 50%;
 }

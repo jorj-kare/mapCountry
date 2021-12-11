@@ -1,6 +1,6 @@
 "use strict";
-import icons from 'url:../data/icons.svg';
-const infoEl = document.querySelector(".box");
+
+const box = document.querySelector('.box');
 import * as helper from "./helpers";
 import * as model from "./model";
 import * as gameView from "./views/gameView";
@@ -30,23 +30,29 @@ const controlGame = async function (e) {
   if (!model.state.continent.continentName) return;
 
   menuView.hideMenu();
-  helper.renderSpinner(infoEl);
+  
   const continent = model.loadCentroids(model.state.continent.continentName);
   await model.loadContinentSelection();
   
   await model.loadCountriesPolygon(model.state.map);
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
-  model.loadRandomCountry(model.state.continent.countries);
-  gameView.displayInfo(model.state.randomCountry, 1);
-// infoEl.innerHTML= '';
   gameView.renderCountriesPolygons(
-    model.state.map,
-    model.state.continent.countriesPolygon,
-    controlCountry
-  );
+   model.state.map,
+   model.state.continent.countriesPolygon,
+   
+ );
+  model.loadRandomCountry(model.state.continent.countries);
+  
+
+  gameView.addHandlerClickCountry(model.state.map,model.state.continent.countriesPolygon,controlCountry)
+  helper.renderSpinner(box);
+  gameView.displayInfo(model.state.randomCountry, 1);
+  
+  
 };
 
 const controlCountry = function (e) {
+  
   if (e.features[0].properties.ISO_A3 === model.state.randomCountry.code3) {
     let color = helper.generateRandomColor("light");
     model.state.map.setPaintProperty(
