@@ -7,6 +7,7 @@ import * as gameView from "./views/gameView";
 import * as menuView from "./views/menuView";
 
 const init = async function () {
+ await model.saveData();
   model.renderMap();
   menuView.addHandlerMenu(controlMenu);
   gameView.addHandlerCountry(controlGame);
@@ -38,7 +39,7 @@ const controlGame = async function (e) {
   menuView.moveTo(model.state.map, continent.coords, continent.zoomLevel);
   gameView.renderCountriesPolygons(
    model.state.map,
-   model.state.continent.countriesPolygon,
+   model.state.continent.continentPolygon,
    
  );
   model.loadRandomCountry(model.state.continent.countries);

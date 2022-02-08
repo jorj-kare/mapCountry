@@ -52,5 +52,5 @@ export const renderSpinner = function(parentElement) {
   
   parentElement.insertAdjacentHTML('afterbegin', markup);
  setTimeout(function() { 
-  parentElement.innerHTML = ''},3000 )
+  parentElement.innerHTML = ''},2000 )
 }

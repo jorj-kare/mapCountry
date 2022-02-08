@@ -11,8 +11,16 @@ export const state = {
     zoomLevel: "",
     countries: [],
     countriesPolygon: [],
+    continentPolygon: [],
   },
 };
+export const saveData = async function(){
+  const countries = await fetchData(countryByContinent);
+    state.continent.countriesPolygon = countries
+    state.continent.coords = [0, 0];
+    state.continent.zoomLevel = 1;
+    
+}
 
 export const renderMap = function () {
   mapboxgl.accessToken = ACCESS_TOKEN;
@@ -57,24 +65,21 @@ export const loadContinentSelection = async () => {
 
 export const loadCountriesPolygon = async function () {
   try {
-    const countries = await fetchData(countryByContinent);
-    if (state.continent.continentName === "all") {
-      state.continent.countriesPolygon = countries
-        .map((c) => c.splice(1))
-        .flat();
-      state.continent.coords = [0, 0];
-      state.continent.zoomLevel = 1;
-    } else {
+    const countries = state.continent.countriesPolygon;
+
+      
       const countriesData = countries
         .filter(
           (c) =>
+          
             c[0].continent.name.toLowerCase() === state.continent.continentName
         )
         .flat();
-      state.continent.countriesPolygon = countriesData.splice(1);
+        
+      state.continent.continentPolygon = countriesData.splice(1);
       state.continent.coords = countriesData[0].continent.coords;
       state.continent.zoomLevel = countriesData[0].continent.zoomLevel;
-    }
+    // }
   } catch (err) {
     throw err;
   }
